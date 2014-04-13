@@ -18,7 +18,7 @@ Plugin.create(:mikutter_oshiri_turbo) do
             if fav_by[:idname] == "firstspring1845"
                 got_otp = got_otp * 1.845
             end
-            otp = otp + got_otp
+            otp = otp + got_otp.to_i
         end
     end
 
