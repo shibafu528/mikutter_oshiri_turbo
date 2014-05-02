@@ -41,7 +41,7 @@ Plugin.create(:mikutter_oshiri_turbo) do
             otp = otp - 1
             used_otp = used_otp + 1
             
-            turbo = turbo + (rand(1835).to_f / 1000 + 0.001)
+            turbo = turbo + (rand(1845).to_f / 1000 + 0.001)
         end
         message = "#{used_otp}OTPを使い、おしりターボした結果は #{turbo} cm でした。 #ostb_game"
         Service.primary.update(:message => message)
